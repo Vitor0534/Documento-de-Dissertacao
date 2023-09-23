@@ -1,0 +1,152 @@
+\documentclass[
+	12pt,
+	openright,
+	oneside,
+	a4paper,
+	sumario=tradicional,
+	english,
+	french,
+	spanish,
+	brazil,
+	]{abntex2}
+
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{indentfirst}
+\usepackage{color}
+\usepackage{graphicx}
+\usepackage{microtype}
+\usepackage{array}
+\usepackage{lipsum}
+\usepackage[brazilian,hyperpageref]{backref}
+\usepackage[alf,abnt-emphasize=bf]{abntex2cite}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{lastpage}
+\usepackage{listings}
+\usepackage{pdflscape}
+\usepackage{dirtree}
+\usepackage{ulem}
+\renewcommand\DTstyle{\rmfamily}
+\usepackage{longtable}
+\usepackage{multirow}
+\usepackage{comment}
+\usepackage{pdfpages}
+\usepackage{booktabs}
+
+%package para quebra de linha em url
+\usepackage{xurl}
+
+% Package para código fonte
+\usepackage{minted}  
+
+% Package para controle de elementos flutuantes, diciona H aos parametros de piosicionamento
+\usepackage{float} 
+
+
+%Packages para criação de pseudo códigos
+\usepackage{algpseudocode}
+\usepackage{algorithm2e}
+\RestyleAlgo{ruled}
+\DontPrintSemicolon
+
+%comandos customizados para este projeto
+
+\newcommand*\rot{\rotatebox{90}}
+\renewcommand{\backrefpagesname}{Citado na(s) página(s):~}
+\renewcommand{\backref}{}
+\renewcommand*{\backrefalt}[4]{
+	\ifcase #1 
+		Nenhuma citação no texto.%
+	\or
+		Citado na página #2.%
+	\else
+		Citado #1 vezes nas páginas #2.%
+	\fi}%
+
+\newcommand{\commentBlock}[1]{} %comenta um bloco de texto
+
+
+
+% ---
+% Informações de dados para CAPA e FOLHA DE ROSTO 
+% ---
+\titulo{DETECÇÃO DE DIMENSÕES DE BAGAGENS AEROPORTUÁRIAS A PARTIR DE DISPOSITIVOS DE BAIXO CUSTO}
+\autor{Vitor de Almeida Silva \\
+Prof. Orientador: Prof. Dr. Marcos Paulino Roris Junior \\
+Profa. Coorientadora: Profa. Dra. Michelle Carvalho Galvão da Silva Pinto Bandeira}
+\local{Aparecida de Goiânia - GO}
+\data{Dezembro, 2022}
+\instituicao{%
+  Universidade Federal de Goiás -- UFG
+  \par
+  Faculdade de Ciências e Tecnologia
+  \par
+  Programa de Pós-Graduação em Engenharia de Produção}
+\tipotrabalho{Texto de qualificação (Mestrado)}
+\preambulo{Texto de qualificação submetido à Comissão Examinadora do Programa de Pós-Graduação em Engenharia de Produção.}
+\definecolor{blue}{RGB}{41,5,195}
+\makeatletter
+\hypersetup{
+		pdftitle={\@title}, 
+		pdfauthor={\@author},
+    	pdfsubject={\imprimirpreambulo},
+	    pdfcreator={LaTeX with abnTeX2},
+		pdfkeywords={Demand Forecasting}{Combination Forecasting}{Combination Optimization}{Industrial Application}, 
+		colorlinks=true,
+    	linkcolor=blue,
+    	citecolor=blue,
+    	filecolor=magenta,
+		urlcolor=blue,
+		bookmarksdepth=4
+}
+\makeatother
+\setlength{\parindent}{1.3cm}
+\setlength{\parskip}{0.2cm}
+\makeindex
+
+
+
+
+%----------------------------------------------------
+% CORREÇÃO DO SUMÁRIO
+%----------------------------------------------------
+%\usepackage{etoc}
+
+%\etocsetstyle{chapter} 
+%{}
+%{\addvspace{.5ex}\setlength{\leftskip}{1.5cm}\noindent}
+%{\llap{\makebox[1.5cm][l]{\bfseries\etocnumber}}\etocname
+%  \hspace{10pt}\nobreak\dotfill\hspace{10pt}\etocpage\par}
+%{}
+%\etocsetstyle{section}
+%{}
+%{\addvspace{.5ex}\noindent\setlength{\leftskip}{1.5cm}\noindent}
+%{\llap{\makebox[1.5cm][l]{{\etocnumber}}}\etocname
+%  \hspace{10pt}\nobreak\dotfill\hspace{10pt}{\etocpage}\par}
+%{}
+%\etocsetstyle{subsection}
+%{}
+%{\addvspace{.5ex}\noindent\setlength{\leftskip}{1.5cm}\noindent}
+%{\llap{\makebox[1.5cm][l]{{\bfseries\etocnumber}}}\etocname
+%  \hspace{10pt}\nobreak\dotfill\hspace{10pt}{\etocpage}\par}
+%{}
+%\etocsettocstyle{\chapter*{\normalfont\bfseries SUMÁRIO}}{}
+%\setcounter{tocdepth}{1}
+%\setcounter{secnumdepth}{2}
+
+%----------------------------------------------------
+% CORREÇÃO DAS SECTIONS E SUBSECTIONS NO TEXTO
+%----------------------------------------------------
+% Finalmente, corrigi negrito nos numeros em chap e sect.
+% \renewcommand{\chapnumfont}{\normalfont\bfseries} %ok
+% \renewcommand{\chaptitlefont}{\bfseries\normalfont}
+
+
+% \let\oldsubsection=\subsection
+% Save the existing sectioning commands
+
+% \renewcommand{\subsection}[1]{{%
+%   \setsecnumformat{{\bfseries\thesubsection\quad}}%
+%   \oldsubsection{#1}}} 

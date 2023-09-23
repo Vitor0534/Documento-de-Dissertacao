@@ -1,0 +1,147 @@
+\imprimircapa
+\imprimirfolhaderosto
+
+\begin{fichacatalografica}
+    \vspace*{15cm} 
+    \hrule 
+    \begin{center} 
+    \begin{minipage}[c]{12.5cm} 
+        \imprimirautor
+        \hspace{0.5cm} \imprimirtitulo / \imprimirautor. --
+        \imprimirlocal, \imprimirdata-
+        \hspace{0.5cm} \pageref{LastPage} p. : il.(alguma color.); 30 cm.\\
+        \hspace{0.5cm} \imprimirorientadorRotulo \imprimirorientador\\
+        \hspace{0.5cm}
+        \parbox[t]{\textwidth}{\imprimirtipotrabalho~--~\imprimirinstituicao,
+        \imprimirdata.}\\
+        \hspace{0.5cm}
+        1. Reconstrução 3D. 
+        2. \textit{Self Bag Drop}.
+        3. Dimensões de Bagagens.
+        4. visão computacional.
+        I. Prof. Dr. Marcos Paulino Rozis Junior.
+        II. Profa. Dra. Michelle Carvalho Galvão da Silva Pinto Bandeira 
+        III. Universidade Federal de Goiás.
+        IV. Programa de Pós-graduação em Engenharia de Produção
+        V. Detecção de dimensões de bagagens aeroportuárias a partir de dispositivos de baixo custo\\
+        \hspace{8.75cm} CDU xx:xxx:xxx.x\\
+    \end{minipage}
+    \end{center}
+    \hrule
+\end{fichacatalografica}
+
+\begin{folhadeaprovacao}
+    \begin{center}
+        {\ABNTEXchapterfont\large\imprimirautor}
+        \vspace*{\fill}\vspace*{\fill}
+        
+        {\ABNTEXchapterfont\bfseries\Large\imprimirtitulo}
+        \vspace*{\fill}
+        \hspace{.45\textwidth}
+        \begin{minipage}{.5\textwidth}
+            \vspace{0.8cm}
+            \imprimirpreambulo
+        \end{minipage}%
+        \vspace*{\fill}
+    \end{center}
+    
+    Trabalho Status. \imprimirlocal, 13 de Dezembro de 2022:
+    \assinatura{\textbf{Prof. Dr. Marcos Paulino Rozis Junior} \\ Orientador -- Universidade Federal de Goiás}
+     \assinatura{\textbf{Profa. Dra. Michelle Carvalho Galvão da Silva Pinto Bandeira} \\ Coorientadora -- Universidade Federal de Goiás}
+    \assinatura{\textbf{Prof. Dr. Diogo de Souza Rabelo} \\ Membro Interno -- Universidade Federal de Goiás}
+    \assinatura{\textbf{Prof. Dr. Li Weigang} \\ Membro Externo -- Universidade de Brasília}
+    
+    \begin{center}
+        \vspace*{0.5cm}
+        {\large\imprimirlocal}
+        \par
+        {\large\imprimirdata}
+        \vspace*{1cm}
+    \end{center}
+\end{folhadeaprovacao}
+
+
+\begin{comment}
+        \begin{dedicatoria}
+            \vspace*{\fill}
+            Este trabalho é dedicado...
+            \vspace*{\fill}
+        \end{dedicatoria}
+        
+        \begin{agradecimentos}
+            Os agradecimentos...
+        \end{agradecimentos}
+\end{comment}
+
+
+
+
+
+
+\begin{epigrafe}
+    \vspace*{\fill}
+    \begin{flushright}
+        \textit{‘‘Não importa o quanto tente, \\ você sozinho não pode mudar o mundo.\\  Mas este é o lado bonito do mundo.‘‘\\
+        (L - Death Note)}
+    \end{flushright}
+\end{epigrafe}
+
+
+
+\begin{resumo}
+Estudos recentes mostram um aumento significativo no tempo de embarque de passageiros, variando de 22 minutos para 40 minutos no período de 1990 a 2009. Uma das causas desse atraso é o processo de check-in, em maior parte devido à verificação das dimensões de bagagens de mão e de porão. As dimensões influenciam no armazenamento das bagagens e no gasto com a carga, caso não estejam nos padrões o cliente poderá pagar taxas extras e ser orientado a voltar à fila de \textit{check-in}. 
+Para amenizar o problema, empresas estão investindo em \textit{self bag drop}. Nessa lógica, o passageiro fica responsável pelas medidas. Entretanto, pode-se gerar erros devido ao formato da bagagem e a complexidade de lidar com objetos despachados em conjunto. O presente trabalho constatou que alguns dispositivos conseguem obter automaticamente as dimensões de objetos/bagagens, em especial equipamentos baseados na tecnologia a LASER. Contudo, são equipamentos com preços expressivos e que comumente requerem uma instrumentação e modificação do ambiente para sua instalação. Com isso, esta pesquisa busca investigar a viabilidade técnica de se utilizar dispositivos de baixo custo na obtenção das dimensões de bagagens aeroportuárias.
+Dentre as técnicas de baixo custo, destaca-se o uso do sensor de profundidade Microsoft Kinect, capaz de obter uma nuvem de pontos (\textit{point cloud}) do objeto em análise. Com base neste sensor, desenvolveu-se um algoritmo para capturar, montar e analisar a \textit{point cloud} gerada, obtendo assim a dimensão da bagagem. 
+Para validar a abordagem, foi construído um protótipo que contém uma esteira e uma estrutura para fixar o sensor, permitindo a configuração de velocidade e parâmetros de captura dos dados, como passo de amostragem e região de captura. 
+Os testes realizados indicam ser possível obter dados de profundidade, largura e altura com precisão pelo uso do sensor de profundidade Microsoft Kinect V2, com uma menor exatidão para a altura. Tais resultados demonstram o potencial de uso dessa alternativa de baixo custo no gerenciamento das operações de embarque e investimentos das companhias aéreas.
+
+
+    \vspace{\onelineskip}
+    \noindent
+    \textbf{Palavras-chaves}: Reconstrução 3D. \textit{self bag drop}. dimensões de bagagens. visão computacional.
+\end{resumo}
+
+
+\begin{comment}
+    \begin{resumo}[Summary]
+        \begin{otherlanguage*}{English}
+            This is a summary in English...
+            \vspace{\onelineskip}
+            \noindent
+            \textbf{Keywords}: latex. abntex. publication of texts.
+        \end{otherlanguage*}
+    \end{resumo}
+\end{comment}
+
+
+\pdfbookmark[0]{\listfigurename}{lof}
+\listoffigures*
+\cleardoublepage
+
+\pdfbookmark[0]{\listtablename}{lot}
+\listoftables*
+\cleardoublepage
+
+
+\begin{SingleSpace}
+\begin{siglas}
+    \item[2D ou $R^2$] 2 dimensões
+    \item[3D ou $R^3$] 3 dimensões
+    \item[ANAC] Agência Nacional de Aviação Civil
+    \item[AABB] Axes Align Bounding Box
+    \item[DBSCAN] Density-Based Spatial Clustering of Applications with Noise
+    \item[KPI] Key Performance Indicators
+    \item[LASER] Light Amplification by the Stimulated Emission of Radiation
+    \item[LiDAR] Light Detection and Ranging
+    \item[MAE] Mean Absolute Error
+    \item[MBB] Minimum Bounding Box
+    \item[OMBB] Oriented Minimum Bounding Box
+    \item[PDI] Processamento Digital de Imagens
+    \item[RGB] Red, Green, and Blue
+  \end{siglas}
+\end{SingleSpace}
+\pdfbookmark[0]{\contentsname}{toc}
+\tableofcontents*
+\cleardoublepage
+
+\textual

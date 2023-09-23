@@ -1,0 +1,15 @@
+%\input{capitulos/conclusao}
+\chapter[Conclusão]{Conclusão}
+\label{cap_conclusao}
+
+    A presente pesquisa investigou a viabilidade técnica de se utilizar dispositivos de baixo custo na obtenção das dimensões de bagagens aeroportuárias. Para tanto, foi realizada uma revisão sistemática onde foram selecionados 14 trabalhos de um total de 167. Tais trabalhos, aprovados nos critérios determinados por este estudo, empregaram técnicas de PDI e reconstrução de objetos 3D, sendo que todos utilizaram \textit{point clouds}. Para extração da \textit{point cloud}, foram usados métodos tais como visão binocular, scanners a laser e sensores de profundidade. 
+    
+    Dos trabalhos que propuseram tecnologias alternativas, foi dado destaque ao Kinect. Esta ferramenta tem baixo custo e alta precisão, de modo que é possível reconstruir objetos com fidelidade. Por tanto, sensores baseados em IR (infravermelho) e câmeras, são alternativas para a criação de sistemas baixo custo. No entanto, nos trabalhos identificados, o kinect foi utilizado em outros escopos que não os terminais de medidas de bagagens. Ainda, as soluções desenvolvidas nos trabalhos apresentam limitações, como a alta influência do formato e posição do objeto nos resultados.
+    
+    Posteriormente, para explorar a viabilidade técnica do uso dos sensores de profundida no problema abordado, foi construído um protótipo. Para tanto, foi utilizado o sensor kinect v2 para captura da \textit{point cloud} da bagagem, fixando-o em uma estrutura de esteira automatizada. O protótipo consegue retornar as dimensões de bagagens de mão ou de despacho. 
+    
+    Para avaliar o modelo proposto, foram realizados testes considerando diferentes posições do sensor e das bagagens (em pé, de lado e deitada). Os resultados expostos na Sessão \ref{cap_Resultados e Discussoes} mostram que o sistema conseguiu obter a \textit{point cloud} e calcular as dimensões das bagagens com um MAE total de 2,86 cm. O tempo médio gasto por medida é de 0,14 s/cm. Isso indica que o sistema precisa de melhorias no tempo consumido. Esses dados demonstram haver potencial para o uso dessa alternativa de baixo custo na gestão de operações de embarque em companhias aéreas. Ao reduzir os erros de medição, é possível otimizar o uso do espaço na aeronave, reduzir prejuízos a companhia e aliviar as frustrações dos passageiros.
+    
+    Como trabalhos futuros desta pesquisa, tem-se o aprofundamento dos testes referentes a quantidade de bagagem por medida, bem como explorar o impacto de alças, rodas e etiquetas nos resultados. Almeja-se explorar, também, a obtenção do peso da bagagem e avaliar situações de malas fora do padrão ou com deformações.
+
+    

@@ -1,0 +1,49 @@
+%\input{capitulos/intro}
+\chapter[Introdução]{Introdução}
+\label{cap_intro}
+De 2004 ao início de 2020, o número de pessoas utilizando o transporte aéreo chegou a 4,723 bilhões \cite{statista_2020_airline,icao_2019_the}. Por conta desse volume, a logística de embarque vem realizando um papel fundamental para mitigar atrasos em processos tais como \textit{check-in} e verificação de bagagens \cite{gao_2021_airline}. No entanto, ao se comparar o tempo de embarque de 200 passageiros em 1990 e em 2009, vê-se um aumento de 22 minutos para 40 minutos, indicando que o processo de embarque continua sendo um fator que consome tempo razoável nos aeroportos \cite{ren_2020_a}. Isso destaca que é necessário evoluir as tecnologias aplicadas nesse setor, visto que, atrasos acabam resultando em prejuízos para os passageiros e para as companhias \cite{ren_2020_a, unitedairlines_2020_checkin, qingji_2018_method,gao_2018_minimum}. 
+
+Dentro do processo de embarque, a verificação das dimensões de bagagens de mão é um dos fatores que consome tempo significativo \cite{ronzani_2015_impact, negri_2017_avaliao}. Outro fator é o congestionamento formado no corredor entre os assentos. Um dos motivos para tal problema decorre do atraso da armazenagem das bagagens pelos passageiros, ação influenciada pelas dimensões, quantidade e material das mesmas \cite{ren_2020_a}.
+
+Para mitigar esse problema, as empresas aéreas investem em soluções automatizadas. Dentre essas, destaca-se a implantação de terminais de autoatendimento para acelerar o processo de embarque \cite{colby_2019_selfservice, ren_2020_a}. Tal procedimento, tem como requisito o uso de tecnologias que possibilitem ao passageiro fazer o seu próprio \textit{check-in} e despacho de bagagens (\textit{self bag drop}). Essa lógica, pode ser aplicada na entrada, na área de espera, ou disponível ao longo do aeroporto \cite{alsyouf_2018_improving}. Isso otimiza os serviços e aprimora a economia de tempo. Entretanto, o processo de verificação do dimensionamento da bagagem recai ao passageiro, que pode gerar erros devido ao formato ou posição da bagagem e a complexidade de lidar com múltiplos objetos despachados em conjunto \cite{colby_2019_selfservice, ren_2020_a}. 
+
+Uma das abordagens utilizadas por empresas aéreas para reduzir esses erros é o uso de equipamentos de visão computacional, que podem aprimorar a verificação e diminuir a necessidade de instrumentação do equipamento \cite{anderson_2019_singapore, humphries_2019_newark, kucuk_2019_development,gmen_2021_smart}. Tais dispositivos obtêm as dimensões pela aplicação de, por exemplo, processamento digital de imagens (PDI), reconstrução de objetos 3D e/ou aprendizado de máquina \cite{zhang_2018_a}. 
+
+Para as companhias aéreas, o mais comum é o uso de sensores a LASER, capazes de obter informações das bagagens em forma de \textit{point clouds} (nuvem de pontos) \cite{gao_2021_airline}. Os pontos representam amostras das extremidades de um objeto no espaço e, a partir dessa nuvem de pontos, pode-se obter a dimensão do objeto \cite{chen_2013_research}. Os equipamentos que utilizam essa técnica podem retornar com precisão as dimensões das bagagens, contudo, estes equipamentos geralmente têm preços expressivos, variando de USD 10.000,00 a USD 111.000,00 dólares para um único sensor. Além disso, os mesmos comumente requerem uma instrumentação e modificação do ambiente para sua instalação, por vezes, inviabilizando a operabilidade em outros ambientes, como, por exemplo, utilizar tais dispositivos nas esteiras internas de despacho \cite{wan_2012_a, gao_2018_minimum}.
+
+Dada a inflexibilidade dos equipamentos existentes, aliado aos preços expressivos, surge uma lacuna importante no setor, trazendo oportunidades para a experimentação de novas abordagens na construção de sistemas de visão com custos menores. Tais sistemas, vêm utilizando alternativas para coletar os dados de posição ou dimensões dos objetos do mundo físico como, por exemplo, câmeras digitais e sensores de profundidade \cite{chan_2018_an}.
+
+No que diz respeito aos sensores de profundidade, um exemplo relevante é o Microsoft Kinect, que tem se tornado popular devido ao seu preço consideravelmente mais baixo em comparação com os dispositivos de mercado, custando cerca de USD 200 dólares. Esse sensor é capaz de capturar os pontos que compõem a superfície de objetos no mundo físico, além de permitir o estudo de texturas e cores por meio de uma câmera RGB, o que possibilita a criação de \textit{point clouds} coloridas. Devido à sua relevância para os objetivos desta pesquisa, optamos por utilizar esse sensor nos produtos desenvolvidos neste trabalho.
+
+Como exposto ao longo do texto, existem oportunidades de aplicação de dispositivos de baixo custo nesse escopo, os quais podem reduzir gastos das empresas aéreas quanto ao tempo e recursos financeiros. Sendo assim, o objetivo do presente trabalho é investigar a viabilidade técnica de se utilizar dispositivos de baixo custo na obtenção das dimensões de bagagens aeroportuárias.
+
+\section{Justificativa}
+\label{sec_Justificativa}
+
+Os sistemas de medições de bagagens possuem diversos aspectos a serem observados. Da perspectiva dos funcionários, por exemplo, determinadas atividades consistem em verificar as dimensões de bagagens, seja manualmente as posicionando em um sensor. Estas ações repetitivas, podem ser automatizadas por \textit{self bag drop}, garantindo padronização, velocidade, economia e autonomia do processo \cite{zheng_2018_smart, neethu_2015_role}.
+
+Nessa vertente, os equipamentos disponíveis no mercado geralmente têm custos expressivos. Estes, ainda podem apresentar limitações tal como o número, posição e formato das bagagens, além de necessitarem de instrumentação. Por conta disso, empresas podem optar por manter determinadas atividades manuais, aumentando gastos financeiros e o risco de gerar atrasos no processo de \textit{check-in}. Sendo assim, dispositivos de baixo custo focados em \textit{self bag drop} podem contribuir com a qualidade do processo de embarque nessas empresas \cite{gao_2018_minimum}.
+
+Outro aspecto a ser considerado é que um sistema que seja de fácil transposição pode facilitar o uso em diferentes locais do aeroporto, sem necessidade de alteração de infraestrutura. Esse aspecto também possibilita que esses sejam aplicados a diferentes normas vigentes no país, como, por exemplo, a verificação de bagagens de mão e de porão.
+
+Desse modo, o avanço de pesquisas relacionadas ao desenvolvimento de sistemas de \textit{self bag drop} de baixo custo faz-se necessário, uma vez que aumenta a qualidade de processos/produtos em aeroportos, reduz o tempo de embarque e possibilita que o passageiro verifique as dimensões de suas bagagens pessoalmente.
+	
+Por fim, é importante destacar que os conceitos explorados neste trabalho têm aplicações relevantes em diversas outras indústrias. Por exemplo, empresas do setor alimentício ou de transporte de cargas podem se beneficiar ao verificar as dimensões das caixas, garantir a qualidade dos alimentos e otimizar o espaço de seus produtos para melhorar a eficiência da logística de transporte \cite{chen_2013_research, gomes_2012_applications}.
+  
+\section{Objetivos}
+\label{sec_Objetivos}
+
+O objetivo geral do presente trabalho é investigar a viabilidade técnica de se utilizar dispositivos de baixo custo na obtenção das dimensões de bagagens aeroportuárias.
+    
+Os objetivos específicos desta pesquisa se desdobram em:
+\begin{itemize}
+    \item realizar um mapeamento e comparação dos dispositivos existentes para detecção de dimensões de bagagens;
+    \item propor um modelo de sistema para obtenção de dimensões de bagagens de baixo custo, com uso de algoritmos de visão computacional e sensor de profundidade;
+    \item avaliar o desempenho desta tecnologia quanto à posição do sensor;
+    \item avaliar o desempenho desta tecnologia em lidar com diferentes posições e formas de bagagens.
+\end{itemize}
+
+\section{Organização do Trabalho}
+\label{sec_OrganizacaoDoTexto}
+
+O presente trabalho está organizado em cinco capítulos. No Capítulo \ref{cap_intro} foram discutidas as informações introdutórias quanto à pesquisa, pontuando, também, as motivações e objetivos do trabalho. Já o Capítulo \ref{cap_Referencial teorico} corresponde ao referencial teórico, reunindo informações quanto aos fundamentos que sustentam essa pesquisa, incluindo tecnologias, métodos e comparações, sendo que, em seguida, são discutidos os trabalhos relacionados, trazendo as abordagens principais e complementares, encerrando com os pontos em aberto. No Capítulo \ref{cap_Materiais e Metodos} são expostos os materiais e métodos, discorrendo sobre o modelo proposto para medida de bagagens e suas etapas de captura de dados, pré-processamento e pós-processamento. Na sequência, o Capítulo \ref{cap_Resultados e Discussoes} traz os resultados e discussões quanto aos testes realizados com a solução proposta. Finalmente, no Capítulo \ref{cap_conclusao} é realizada a conclusão, composta pelas considerações quanto aos resultados e o objetivo da pesquisa, encerrando com indicações para trabalhos futuros.  
