@@ -236,69 +236,29 @@ Quantidade de passageiros total                 & 150                     &     
 
     Outra informação considerada, é o tempo médio máximo de check-in, esse dado varia entre as companhias e voos. Algumas recomendações orientam que é apropriado realizar check-in com 30 a 60 minutos de antecedência ao tempo de embarque, que, para uma aeronave como o A320, pode chegar a 30 minutos. Nesse contexto, o processo todo duraria até 90 minutos \cite{universityofminnesota_2022_airport, anac_2016_anac}. Na prática, é possível fazer check-in online, nos kiosks e nas filas de atendimento, contudo, para esse cenário, é considerado que todos os passageiros realizaram check-in nas filas utilizando as esteiras, todos dentro do prazo máximo de 60 minutos. 
 
-    Baseado nessa informação, foi realizado o dimensionamento da quantidade de esteiras em paralelo necessárias para cumprir o tempo limite. A Tabela \ref{tab:Dimensionamento da operao do modelo proposto em comparao com diferentes mtricas de mercado} mostra os resultados, é importante reiterar que foi considerado apenas o tempo de medida de bagagens. Os dados indicam que 2 esteiras foram suficientes para cumprir o prazo de 60 minutos considerando a operação com o tempo ótimo para self bag drop. Já para o modelo dessa pesquisa, foram necessárias 3 esteiras. As demais métricas não alcançaram o objetivo, para a projeção média da IATA seria necessário 7 esteiras e para as recomendações máximas de self bag drop seriam necessárias 4. 
+    Baseado nessa informação, foi realizado o dimensionamento da quantidade de esteiras em paralelo necessárias para cumprir o tempo limite. A Tabela \ref{tab:Dimensionamento da operao do modelo proposto em comparao com diferentes mtricas de mercado} mostra os resultados, é importante reiterar que foi considerado apenas o tempo de medida de bagagens. Os dados indicam que 1 esteiras foi suficientes para cumprir o prazo de 60 minutos considerando a operação com o tempo ótimo para self bag drop. Para o modelo dessa pesquisa, 1 esteira também foi suficiente, mas comparado ao tempo ótimo, seriam necessárias 2 esteiras para ter desempenho semelhante. Já o tempo máximo para self bag drop necessitou de 2 esteiras para não ultrapassar o limite. As demais métricas não alcançaram o objetivo, para a projeção média da IATA seriam necessárias 7 esteiras e para as recomendações máximas de self bag drop seriam necessárias 4. 
 
-\begin{table}[h!]
-\centering
-\resizebox{\textwidth}{!}{%
-\begin{tabular}{llllllll}
+\begin{table}[]
+\begin{tabular}{llllll}
 \hline
-{Tipo de abordagem} &
-  {\begin{tabular}[c]{@{}l@{}}Quantidade \\ de passageiros\end{tabular}} &
-  {\begin{tabular}[c]{@{}l@{}}Quantidade \\ de bagagens \\ de mão\end{tabular}} &
-  {\begin{tabular}[c]{@{}l@{}}Quantidade \\ de bagagens \\ de despacho\end{tabular}} &
-  {\begin{tabular}[c]{@{}l@{}}Tempo gasto \\ de medida por \\ passageiro (s)\end{tabular}} &
-  {\begin{tabular}[c]{@{}l@{}}Tempo gasto\\  total com check-in\\ utilizando \\ 1 esteira(h)\end{tabular}} &
-  {\begin{tabular}[c]{@{}l@{}}Tempo gasto \\ total com check-in\\ utilizando \\ 2 esteiras(h)\end{tabular}} &
-  {\begin{tabular}[c]{@{}l@{}}Tempo gasto \\ total com check-in\\ utilizando\\  3 esteiras (h)\end{tabular}} \\ \hline
-{\begin{tabular}[c]{@{}l@{}}Projeção da IATA \\ (máximo)\end{tabular}} &
-  {150} &
-  {104} &
-  {296} &
-  {300} &
-  {12,5} &
-  {6,3} &
-  {4,17} \\
-{\begin{tabular}[c]{@{}l@{}}Projeção da IATA\\ (médio)\end{tabular}} &
-  {150} &
-  {104} &
-  {296} &
-  150 &
-  6,3 &
-  3,15 &
-  2,1 \\
-{\begin{tabular}[c]{@{}l@{}}Recomendações \\ Self bag drop (máximo)\end{tabular}} &
-  {150} &
-  {104} &
-  {296} &
-  {30} &
-  {3,34} &
-  {1,67} &
-  {1,11} \\
-{\begin{tabular}[c]{@{}l@{}}Recomendações \\ Self bag drop (ótimo)\end{tabular}} &
-  {150} &
-  {104} &
-  {296} &
-  15 &
-  1,6 &
-  0,8 &
-  0,53 \\
-{Produto dessa pesquisa} &
-  {150} &
-  {104} &
-  {296} &
-  {19} &
-  {2,12} &
-  {1,06} &
-  {0,71} \\ \hline
-\end{tabular}%
-}
+Tipo de abordagem &
+  \begin{tabular}[c]{@{}l@{}}Quantidade \\ de passageiros\end{tabular} &
+  \begin{tabular}[c]{@{}l@{}}Tempo gasto \\ de medida por \\ passageiro (s)\end{tabular} &
+  \begin{tabular}[c]{@{}l@{}}Tempo gasto\\ total com check-in\\ utilizando \\ 1 esteira(h)\end{tabular} &
+  \begin{tabular}[c]{@{}l@{}}Tempo gasto \\ total com check-in\\ utilizando \\ 2 esteiras(h)\end{tabular} &
+  \begin{tabular}[c]{@{}l@{}}Tempo gasto \\ total com check-in\\ utilizando\\  3 esteiras (h)\end{tabular} \\ \hline
+\begin{tabular}[c]{@{}l@{}}Projeção da IATA \\ (máximo)\end{tabular}            & 150 & 300 & 12,5 & 6,3  & 4,17 \\
+\begin{tabular}[c]{@{}l@{}}Projeção da IATA\\ (médio)\end{tabular}              & 150 & 150 & 6,3  & 3,15 & 2,1  \\
+\begin{tabular}[c]{@{}l@{}}Recomendações \\ self-bag-drop (máximo)\end{tabular} & 150 & 30  & 1,25 & 0,63 & 0,42 \\
+\begin{tabular}[c]{@{}l@{}}Recomendações \\ self-bag-drop (ótimo)\end{tabular}  & 150 & 15  & 0,63 & 0,32 & 0,21 \\
+Produto dessa pesquisa                                                          & 150 & 19  & 0,80 & 0,4  & 0,27 \\ \hline
+\end{tabular}
 \caption{Dimensionamento da operação do modelo proposto em comparação com diferentes métricas de mercado para aeronave A320}
 \label{tab:Dimensionamento da operao do modelo proposto em comparao com diferentes mtricas de mercado}
 \end{table}
 
-    Os dados demonstram que, a solução proposta se aproxima dos resultados ótimos, sugerindo a necessidade de melhorias. Comparando os preços dos dispositivos de sef-bag-drop do mercado com os sensores de profundidade, utilizado no produto dessa pesquisa, se tem maior economia direta utilizando 3 esteiras com os sensores de profundidade do que comprando 2 esteiras com o dispositivo do mercado. Cabe recapitular que esse é um cenário simulado, que desconsidera dados dinâmicos e aleatórios, contudo, ele indica que o produto dessa pesquisa tem potencial de ser aplicado na prática. 
 
+    Os dados demonstram que, a solução proposta se aproxima dos resultados ótimos, sugerindo a necessidade de melhorias. Comparando os preços dos dispositivos de sef bag drop do mercado com os sensores de profundidade, utilizado no produto dessa pesquisa, se tem maior economia direta utilizando 2 esteiras com os sensores de profundidade do que comprando 1 esteiras com o dispositivo do mercado. Cabe recapitular que esse é um cenário simulado, que desconsidera dados dinâmicos e aleatórios, contudo, ele indica que o produto dessa pesquisa tem potencial de ser aplicado na prática. 
 
 
 
