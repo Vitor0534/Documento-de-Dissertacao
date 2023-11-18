@@ -238,7 +238,9 @@ Quantidade de passageiros total                 & 150                     &     
 
     Baseado nessa informação, foi realizado o dimensionamento da quantidade de esteiras em paralelo necessárias para cumprir o tempo limite. A Tabela \ref{tab:Dimensionamento da operao do modelo proposto em comparao com diferentes mtricas de mercado} mostra os resultados, é importante reiterar que foi considerado apenas o tempo de medida de bagagens. Os dados indicam que 1 esteiras foi suficientes para cumprir o prazo de 60 minutos considerando a operação com o tempo ótimo para self bag drop. Para o modelo dessa pesquisa, 1 esteira também foi suficiente, mas comparado ao tempo ótimo, seriam necessárias 2 esteiras para ter desempenho semelhante. Já o tempo máximo para self bag drop necessitou de 2 esteiras para não ultrapassar o limite. As demais métricas não alcançaram o objetivo, para a projeção média da IATA seriam necessárias 7 esteiras e para as recomendações máximas de self bag drop seriam necessárias 4. 
 
-\begin{table}[]
+\begin{table}[h!]
+\centering
+\resizebox{\textwidth}{!}{%
 \begin{tabular}{llllll}
 \hline
 Tipo de abordagem &
@@ -252,7 +254,8 @@ Tipo de abordagem &
 \begin{tabular}[c]{@{}l@{}}Recomendações \\ self-bag-drop (máximo)\end{tabular} & 150 & 30  & 1,25 & 0,63 & 0,42 \\
 \begin{tabular}[c]{@{}l@{}}Recomendações \\ self-bag-drop (ótimo)\end{tabular}  & 150 & 15  & 0,63 & 0,32 & 0,21 \\
 Produto dessa pesquisa                                                          & 150 & 19  & 0,80 & 0,4  & 0,27 \\ \hline
-\end{tabular}
+\end{tabular}%
+}
 \caption{Dimensionamento da operação do modelo proposto em comparação com diferentes métricas de mercado para aeronave A320}
 \label{tab:Dimensionamento da operao do modelo proposto em comparao com diferentes mtricas de mercado}
 \end{table}
