@@ -93,7 +93,7 @@ Estudos recentes mostram um aumento significativo no tempo de embarque de passag
 Para amenizar o problema, empresas estão investindo em \textit{self bag drop}. Nessa lógica, o passageiro fica responsável pelas medidas. Entretanto, pode-se gerar erros devido ao formato da bagagem e a complexidade de lidar com objetos despachados em conjunto. O presente trabalho constatou que alguns dispositivos conseguem obter automaticamente as dimensões de objetos/bagagens, em especial equipamentos baseados na tecnologia a LASER. Contudo, são equipamentos com preços expressivos e que comumente requerem uma instrumentação e modificação do ambiente para sua instalação. Com isso, esta pesquisa busca investigar a viabilidade técnica de se utilizar dispositivos de baixo custo na obtenção das dimensões de bagagens aeroportuárias.
 Dentre as técnicas de baixo custo, destaca-se o uso do sensor de profundidade Microsoft Kinect, capaz de obter uma nuvem de pontos (\textit{point cloud}) do objeto em análise. Com base neste sensor, desenvolveu-se um algoritmo para capturar, montar e analisar a \textit{point cloud} gerada, obtendo assim a dimensão da bagagem. 
 Para validar a abordagem, foi construído um protótipo que contém uma esteira e uma estrutura para fixar o sensor, permitindo a configuração de velocidade e parâmetros de captura dos dados, como passo de amostragem e região de captura. 
-Os testes realizados indicam ser possível obter dados de profundidade, largura e altura com precisão pelo uso do sensor de profundidade Microsoft Kinect V2, com uma menor exatidão para a altura. Tais resultados demonstram o potencial de uso dessa alternativa de baixo custo no gerenciamento das operações de embarque e investimentos das companhias aéreas.
+Os testes realizados indicam ser possível obter dados de profundidade, largura e altura com precisão pelo uso do sensor de profundidade Microsoft Kinect V2. Tais resultados demonstram o potencial de uso dessa alternativa de baixo custo no gerenciamento das operações de embarque e investimentos das companhias aéreas.
 
 
     \vspace{\onelineskip}
@@ -102,16 +102,21 @@ Os testes realizados indicam ser possível obter dados de profundidade, largura 
 \end{resumo}
 
 
-\begin{comment}
-    \begin{resumo}[Summary]
-        \begin{otherlanguage*}{English}
-            This is a summary in English...
-            \vspace{\onelineskip}
-            \noindent
-            \textbf{Keywords}: latex. abntex. publication of texts.
-        \end{otherlanguage*}
-    \end{resumo}
-\end{comment}
+
+\begin{resumo}[Detection of airport baggage dimensions from low-cost devices - Abstract]
+    \begin{otherlanguage*}{English}
+        
+        Recent studies indicate a significant increase in passenger boarding times, ranging from 22 to 40 minutes between 1990 and 2009. One contributing factor to this delay is the check-in process, primarily stemming from baggage dimension verification. Incorrect dimensions not only impact luggage storage but also result in additional costs for the customer. In such cases, passengers may be required to pay extra fees and return to the check-in line for corrections.
+        To address this issue, companies are investing in self-bag drop systems, where passengers take responsibility for measuring their baggage. However, challenges arise due to the varied shapes of luggage and the complexities of handling multiple checked items. This study reveals that certain devices, particularly those utilizing LASER technology, can automatically obtain baggage dimensions. Despite their effectiveness, these devices often come with a significant price tag and may require adjustments to the environment for installation. Consequently, this research aims to explore the technical feasibility of employing low-cost devices to measure airport luggage dimensions.
+        Among the low-cost techniques, the use of the Microsoft Kinect depth sensor stands out, capable of obtaining a point cloud (point cloud) of the object under analysis. Based on this sensor, an algorithm was developed to capture, assemble and analyse the point cloud generated, thus obtaining the size of the luggage.
+        To validate the approach, a prototype was built that contains a mat and a structure to fix the sensor, allowing the configuration of speed and data capture parameters, such as sampling step and capture region.
+        The conducted tests indicate that the Microsoft Kinect V2 depth sensor can accurately capture depth, width, and height data. These results indicate the potential of this low-cost alternative in streamlining airline boarding operations.
+            
+       \vspace{\onelineskip}
+       \noindent
+       \textbf{Keywords}: 3D Reconstruction. \textit{self bag drop}. luggage dimensions. computer vision.
+    \end{otherlanguage*}
+\end{resumo}
 
 
 \pdfbookmark[0]{\listfigurename}{lof}
