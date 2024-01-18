@@ -51,6 +51,11 @@
 \RestyleAlgo{ruled}
 \DontPrintSemicolon
 
+
+%Package para alteração da capa e folha de rosto para o modelo do programa de mestrado
+\usepackage{libs/ufg_capa}
+
+
 %comandos customizados para este projeto
 
 \newcommand*\rot{\rotatebox{90}}
@@ -69,23 +74,45 @@
 
 
 
+
 % ---
 % Informações de dados para CAPA e FOLHA DE ROSTO 
 % ---
+
+
+
+
+
 \titulo{DETECÇÃO DE DIMENSÕES DE BAGAGENS AEROPORTUÁRIAS A PARTIR DE DISPOSITIVOS DE BAIXO CUSTO}
-\autor{Vitor de Almeida Silva \\
-Prof. Orientador: Prof. Dr. Marcos Paulino Roriz Junior \\
-Profa. Coorientadora: Profa. Dra. Michelle Carvalho Galvão da Silva Pinto Bandeira}
-\local{Aparecida de Goiânia - GO}
-\data{Dezembro, 2023}
+
+\autor{Vitor de Almeida Silva 
+% \\Prof. Orientador: Prof. Dr. Marcos Paulino Roriz Junior 
+% \\Profa. Coorientadora: Profa. Dra. Michelle Carvalho Galvão da Silva Pinto Bandeira
+}
+
+
+\local{Aparecida de Goiânia}
+\data{2023}
 \instituicao{%
   Universidade Federal de Goiás -- UFG
   \par
   Faculdade de Ciências e Tecnologia
   \par
   Programa de Pós-Graduação em Engenharia de Produção}
-\tipotrabalho{Texto de dissertação (Mestrado)}
-\preambulo{Texto de dissertação submetido para defesa no Programa de Pós-Graduação em Engenharia de Produção.}
+  
+\tipotrabalho{Dissertação (Mestrado)}
+
+\preambulo{
+Dissertação apresentada ao Programa de Pós-Graduação em Engenharia de Produção, da Faculdade de Ciência e Tecnologia, da Universidade Federal de Goiás (UFG), como requisito para obtenção do título de Mestre em 2023. 
+\\
+Área de concentração: Gestão Estratégica e Operacional da Produção 
+\\
+Linha de pesquisa: Tecnologias em Processos e Produtos
+\\
+\\
+Orientador: Prof. Dr. Marcos Paulino Roriz Junior \\
+Coorientadora: Profa. Dra. Michelle Carvalho Galvão da Silva Pinto Bandeira
+}
 \definecolor{blue}{RGB}{41,5,195}
 \makeatletter
 \hypersetup{
@@ -107,46 +134,3 @@ Profa. Coorientadora: Profa. Dra. Michelle Carvalho Galvão da Silva Pinto Bande
 \makeindex
 
 
-
-
-% ----------------------------------------------------
-% CORREÇÃO DO SUMÁRIO
-% ----------------------------------------------------
-% \usepackage{etoc}
-
-%\etocsetstyle{chapter} 
-%{}
-%{\addvspace{.5ex}\setlength{\leftskip}{1.5cm}\noindent}
-%{\llap{\makebox[1.5cm][l]{\bfseries\etocnumber}}\etocname
-%  \hspace{10pt}\nobreak\dotfill\hspace{10pt}\etocpage\par}
-%{}
-%\etocsetstyle{section}
-%{}
-%{\addvspace{.5ex}\noindent\setlength{\leftskip}{1.5cm}\noindent}
-%{\llap{\makebox[1.5cm][l]{{\etocnumber}}}\etocname
-%  \hspace{10pt}\nobreak\dotfill\hspace{10pt}{\etocpage}\par}
-%{}
-%\etocsetstyle{subsection}
-%{}
-%{\addvspace{.5ex}\noindent\setlength{\leftskip}{1.5cm}\noindent}
-%{\llap{\makebox[1.5cm][l]{{\bfseries\etocnumber}}}\etocname
-%  \hspace{10pt}\nobreak\dotfill\hspace{10pt}{\etocpage}\par}
-%{}
-%\etocsettocstyle{\chapter*{\normalfont\bfseries SUMÁRIO}}{}
-%\setcounter{tocdepth}{1}
-%\setcounter{secnumdepth}{2}
-
-%----------------------------------------------------
-% CORREÇÃO DAS SECTIONS E SUBSECTIONS NO TEXTO
-%----------------------------------------------------
-% Finalmente, corrigi negrito nos numeros em chap e sect.
-% \renewcommand{\chapnumfont}{\normalfont\bfseries} %ok
-% \renewcommand{\chaptitlefont}{\bfseries\normalfont}
-
-
-% \let\oldsubsection=\subsection
-% Save the existing sectioning commands
-
-% \renewcommand{\subsection}[1]{{%
-%   \setsecnumformat{{\bfseries\thesubsection\quad}}%
-%   \oldsubsection{#1}}} 

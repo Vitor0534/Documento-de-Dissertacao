@@ -1,0 +1,242 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% A presente lib foi adaptada de um template diponibilizado em: https://pt.overleaf.com/latex/templates/modelo-de-trabalho-academico-ufc/qkxvwzzsfnqk
+
+% É importante mencionar que algumas variáveis e comandos são definidos em outros arquivos (Ex. \preambulo, \autor). Todas essas configurações ficam nos arquivos de configuracoes.tex ou capas_listas_siglas.tex
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%             Variaveis               %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\ies}{\def \@ies}
+\newcommand{\iessigla}{\def \@iessigla}
+\newcommand{\centro}{\def \@centro}
+\newcommand{\departamento}{\def \@departamento}
+\newcommand{\programamestrado}{\def \@programamestrado}
+\newcommand{\programadoutorado}{\def \@programadoutorado}
+\newcommand{\nomedomestrado}{\def \@mestrado}
+\newcommand{\nomedodoutorado}{\def \@doutorado}
+\newcommand{\mestreem}{\def \@mestreem}
+\newcommand{\doutorem}{\def \@doutorem}
+\newcommand{\areadeconcentracaomestrado}{\def \@areadeconcentracaomestrado}
+\newcommand{\areadeconcentracaodoutorado}{\def \@areadeconcentracaodoutorado}
+\newcommand{\dataaprovacao}{\def \@dataaprovacao}
+\newcommand{\epigrafee}{\def \@epigrafee}
+\newcommand{\autordaepigrafe}{\def \@autordaepigrafe}
+\newcommand{\graduacaoem}{\def \@graduacaoem}
+\newcommand{\especializacaoem}{\def \@especializacaoem}
+\newcommand{\habilitacao}{\def \@habilitacao}
+\newcommand{\membrodabancadois}{\def \@membrodabancadois}
+\newcommand{\membrodabancatres}{\def \@membrodabancatres}
+\newcommand{\membrodabancaquatro}{\def \@membrodabancaquatro}
+\newcommand{\membrodabancacinco}{\def \@membrodabancacinco}
+\newcommand{\membrodabancaseis}{\def \@membrodabancaseis}
+\newcommand{\membrodabancaumies}{\def \@membrodabancaumies}
+\newcommand{\membrodabancadoisies}{\def \@membrodabancadoisies}
+\newcommand{\membrodabancatresies}{\def \@membrodabancatresies}
+\newcommand{\membrodabancaquatroies}{\def \@membrodabancaquatroies}
+\newcommand{\membrodabancacincoies}{\def \@membrodabancacincoies}
+\newcommand{\membrodabancaseisies}{\def \@membrodabancaseisies}
+\newcommand{\membrodabancadoiscentro}{\def \@membrodabancadoiscentro}
+\newcommand{\membrodabancatrescentro}{\def \@membrodabancatrescentro}
+\newcommand{\membrodabancaquatrocentro}{\def \@membrodabancaquatrocentro}
+\newcommand{\membrodabancacincocentro}{\def \@membrodabancacincocentro}
+\newcommand{\membrodabancaseiscentro}{\def \@membrodabancaseiscentro}
+\newcommand{\orientadories}{\def \@orientadories}
+\newcommand{\orientadorcentro}{\def \@orientadorcentro}
+\newcommand{\coorientadories}{\def \@coorientadories}
+\newcommand{\coorientadorcentro}{\def \@coorientadorcentro}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%        Imprimir as Variaveis        %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\imprimiries}{\@ies}
+\newcommand{\imprimiriessigla}{\@iessigla}
+\newcommand{\imprimircentro}{\@centro}
+\newcommand{\imprimirdepartamento}{\@departamento}
+\newcommand{\imprimirprogramamestrado}{\@programamestrado}
+\newcommand{\imprimirprogramadoutorado}{\@programadoutorado}
+\newcommand{\imprimirmestrado}{\@mestrado}
+\newcommand{\imprimirdoutorado}{\@doutorado}
+\newcommand{\imprimirmestreem}{\@mestreem}
+\newcommand{\imprimirdoutorem}{\@doutorem}
+\newcommand{\imprimirareadeconcentracaomestrado}{\@areadeconcentracaomestrado}
+\newcommand{\imprimirareadeconcentracaodoutorado}{\@areadeconcentracaodoutorado}
+\newcommand{\imprimirdataaprovacao}{\@dataaprovacao}
+\newcommand{\imprimirepigrafee}{\@epigrafee}
+\newcommand{\imprimirautordaepigrafe}{\@autordaepigrafe}
+\newcommand{\imprimirgraduacaoem}{\@graduacaoem}
+\newcommand{\imprimirespecializacaoem}{\@especializacaoem}
+\newcommand{\imprimirhabilitacao}{\@habilitacao}
+\newcommand{\imprimirmembrodabancadois}{\@membrodabancadois}
+\newcommand{\imprimirmembrodabancatres}{\@membrodabancatres}
+\newcommand{\imprimirmembrodabancaquatro}{\@membrodabancaquatro}
+\newcommand{\imprimirmembrodabancacinco}{\@membrodabancacinco}
+\newcommand{\imprimirmembrodabancaseis}{\@membrodabancaseis}
+\newcommand{\imprimirmembrodabancaumies}{\@membrodabancaumies}
+\newcommand{\imprimirmembrodabancadoisies}{\@membrodabancadoisies}
+\newcommand{\imprimirmembrodabancatresies}{\@membrodabancatresies}
+\newcommand{\imprimirmembrodabancaquatroies}{\@membrodabancaquatroies}
+\newcommand{\imprimirmembrodabancacincoies}{\@membrodabancacincoies}
+\newcommand{\imprimirmembrodabancaseisies}{\@membrodabancaseisies}
+\newcommand{\imprimirmembrodabancadoiscentro}{\@membrodabancadoiscentro}
+\newcommand{\imprimirmembrodabancatrescentro}{\@membrodabancatrescentro}
+\newcommand{\imprimirmembrodabancaquatrocentro}{\@membrodabancaquatrocentro}
+\newcommand{\imprimirmembrodabancacincocentro}{\@membrodabancacincocentro}
+\newcommand{\imprimirmembrodabancaseiscentro}{\@membrodabancaseiscentro}
+\newcommand{\imprimirorientadories}{\@orientadories}
+\newcommand{\imprimirorientadorcentro}{\@orientadorcentro}
+\newcommand{\imprimircoorientadories}{\@coorientadories}
+\newcommand{\imprimircoorientadorcentro}{\@coorientadorcentro}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%           Valores Padrões           %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\ies{UNIVERSIDADE FEDERAL DE GOIÁS (UFG)}
+\iessigla{UFG}
+\centro{FACULDADE DE CIÊNCIA E TECNOLOGIA (FCT)}
+\departamento{PROGRAMA DE PÓS GRADUAÇÃO EM ENGENHARIA DE PRODUÇÃO (PPGEP)}
+\graduacaoem{}
+\habilitacao{} % Pode colocar tambem 'licenciada'
+\especializacaoem{}
+\programamestrado{}
+\nomedomestrado{}
+\mestreem{}
+\areadeconcentracaomestrado{}
+\programadoutorado{}
+\nomedodoutorado{}
+\doutorem{}
+\areadeconcentracaodoutorado{}
+\autor{}
+\titulo{}
+\data{}
+\local{}
+\dataaprovacao{}
+\orientador{}
+\orientadories{}
+\orientadorcentro{}
+\coorientador{}
+\coorientadories{}
+\coorientadorcentro{}
+\membrodabancadois{}
+\membrodabancadoiscentro{}
+\membrodabancadoisies{}
+\membrodabancatres{}
+\membrodabancatrescentro{}
+\membrodabancatresies{}
+\membrodabancaquatro{}
+\membrodabancaquatrocentro{}
+\membrodabancaquatroies{}
+\membrodabancacinco{}
+\membrodabancacincocentro{}
+\membrodabancacincoies{}
+\membrodabancaseis{}
+\membrodabancaseiscentro{}
+\membrodabancaseisies{}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                Capa                 %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\imprimircapadissertacao}{%
+	\begin{capa}%
+		% Todos os elementos da capa devem esta centralizado
+		\center
+
+        \includegraphics[scale=0.6]{imagens/LogoUFG.png} \\
+        \vspace{-0.4cm}
+		\MakeUppercase{\imprimiries} \\
+		\MakeUppercase{\imprimircentro} \\
+		\MakeUppercase{\imprimirdepartamento} \\
+		\abntex@ifnotempty{\imprimirprogramamestrado}{
+			\MakeUppercase{\imprimirprogramamestrado} \\
+		}		
+		\MakeUppercase{\imprimirmestrado} \\
+
+		\vspace{\onelineskip}
+		
+		\vspace{2.0cm}
+
+		\MakeUppercase{\imprimirautor}
+		
+		\vspace{3.0cm}
+		
+		\textbf{\Large \imprimirtitulo}
+		
+		\vfill
+		\normalsize\MakeUppercase\imprimirlocal\par	
+		\normalsize\imprimirdata
+	\end{capa}	
+}
+
+\renewcommand{\imprimircapa}{%
+    \imprimircapadissertacao
+}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%           Folha de Rosto            %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\renewcommand{\folhaderostocontent}{
+	\begin{center}
+		\normalsize\MakeUppercase\imprimirautor\par
+		\vspace{4.0cm}\par
+		\normalsize\textbf{\Large \imprimirtitulo}
+	\end{center}
+	
+	\vspace{3.0cm}
+ 
+	%Retira o espaço do paragrafo
+	\hspace*{-2cm}
+	%Adiciona o espaço da margem
+	\hspace*{8cm}
+	\begin{minipage}{8cm}
+		\begin{SingleSpace}
+			\imprimirpreambulo	
+		\end{SingleSpace}		
+	\end{minipage}
+	
+	\vfill
+	\centering
+	\normalsize\MakeUppercase\imprimirlocal \par
+	\normalsize\imprimirdata	
+}
+\makeatother
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%               TECA                  %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\imprimirTECA}{
+    \includepdf[pages=-]{conteudospadroes/sei_teca_assinado.pdf}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%         Ficha catalográfica         %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\imprimirFichacatalografica}{
+    \includepdf[pages=-]{conteudospadroes/ficha_catalografica.pdf}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%          Ata de defesa              %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\imprimirAtaDeDefesa}{
+    \includepdf[pages=-]{conteudospadroes/ata_de_defesa_Vitor.pdf}
+}
